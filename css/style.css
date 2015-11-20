@@ -524,22 +524,36 @@ section#portfolio .projects .trianglebord .trianglefond {
   border-style: solid;
 }
 section#portfolio .projects .n1 {
-  border-width: 253px 128.5px 0 128.5px;
-  border-color: #3de073 transparent transparent transparent;
+  position: relative;
+  clear: both;
+  width: 20%;
+  height: 0;
+  padding-left: 10%;
+  padding-bottom: 10%;
+  /*.n1a {
+                border-width: 243px 122.5px 0 122.5px;
+                border-color: @purple transparent transparent transparent;
+                top: -250px;
+                left: -123px;
+                .triangle1 {
+                    position: absolute;
+                    top: -236px;
+                    left: -109px;
+                    background: url(../img/triangle1.png) no-repeat;
+                    width: 344px;
+                    height: 339px;
+                }
+            }*/
 }
-section#portfolio .projects .n1 .n1a {
-  border-width: 243px 122.5px 0 122.5px;
-  border-color: #1d1363 transparent transparent transparent;
-  top: -250px;
-  left: -123px;
-}
-section#portfolio .projects .n1 .n1a .triangle1 {
-  position: absolute;
-  top: -236px;
-  left: -109px;
-  background: url(../img/triangle1.png) no-repeat;
-  width: 344px;
-  height: 339px;
+section#portfolio .projects .n1:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -100px;
+  border-left: 128.5px solid transparent;
+  border-right: 128.5px solid transparent;
+  border-top: 253px solid #3de073;
 }
 section#portfolio .projects .n2 {
   border-width: 0 196.5px 389px 196.5px;
